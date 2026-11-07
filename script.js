@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{const selected=button.dataset.tab;document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',String(b===button)));document.querySelectorAll('[data-panel]').forEach(p=>p.hidden=p.dataset.panel!==selected)}));
